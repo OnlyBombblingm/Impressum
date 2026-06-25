@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum & Socials</title>
+    <style>
+        /* Modernes, dunkles Streamer-Design (CSS) */
+        :root {
+            --bg-color: #0e0e10;
+            --card-bg: #1f1f23;
+            --text-color: #efeff1;
+            --text-muted: #adadb8;
+            --accent-color: #9146ff; /* Twitch Lila */
+            --accent-hover: #772ce8;
+            --danger-color: #eb0400;
+        }
+
+        body {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, h2 {
+            color: var(--text-color);
+            margin-top: 0;
+            border-bottom: 2px solid #2f2f35;
+            padding-bottom: 8px;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+
+        .important-note {
+            background-color: rgba(235, 4, 0, 0.1);
+            border-left: 4px solid var(--danger-color);
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        .important-note strong {
+            color: #ff4f4d;
+        }
+
+        /* Kontaktformular Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        input, textarea {
+            background: #2a2a30;
+            border: 1px solid #3a3a42;
+            color: var(--text-color);
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input:focus, textarea:focus {
+            border-color: var(--accent-color);
+            outline: none;
+        }
+
+        button {
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: var(--accent-hover);
+        }
+
+        /* Social Media Links Styling */
+        .social-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: opacity 0.2s;
+        }
+
+        .social-btn:hover {
+            opacity: 0.85;
+        }
+
+        .twitch { background-color: #9146ff; }
+        .tiktok { background-color: #000000; border: 1px solid #3a3a42; }
+        .youtube { background-color: #ff0000; }
+        .instagram { background-color: #e1306c; }
+
+        /* Copyright & Rechtliches Footer */
+        .legal-footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #2f2f35;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Rumpf des Impressums -->
+        <h1>Impressum</h1>
+        <p><strong>Verantwortlich für den Inhalt nach § 5 DDG und § 18 MStV:</strong></p>
+        <p>Lian Ruminowicz</p>
+        <p>Siepmannstr. 28</p>
+        <p>44388, dortmund</p>
+
+        <!-- Wichtiger Hinweis gegen Fanpost -->
+        <div class="important-note">
+            <strong>WICHTIGER HINWEIS:</strong><br>
+            Dies ist eine reine gesetzliche Impressumsadresse für eine Privatperson. Es wird an dieser Adresse <strong>ausdrücklich keine Fanpost, keine Autogrammwünsche und keine Paketpost</strong> angenommen. Unverlangte Zusendungen werden ungeöffnet entsorgt oder gehen zurück an den Absender.
+        </div>
+
+        <!-- Kontaktbereich -->
+        <h2>Contact</h2>
+        <p>E-Mail: <a href="mailto: support@bombblingmrbx.abrdns.com style="color: var(--accent-color); text-decoration: none;">support@bombblingmrbx.abrdns.com</a></p>
+        
+        <!-- Integriertes Kontaktformular -->
+        <form id="contactForm">
+            <div>
+                <label for="email">Ihre E-Mail-Adresse:</label>
+                <input type="email" id="email" required placeholder="support@bombblingmrbx.abrdns.com">
+            </div>
+            <div>
+                <label for="message">Nachricht:</label>
+                <textarea id="message" rows="5" required placeholder="Schreibe deine Nachricht hier..."></textarea>
+            </div>
+            <button type="submit">Nachricht senden</button>
+        </form>
+
+        <!-- Social Media Links Bereich (Mit korrigierten Schrägstrichen) -->
+        <h2>Meine Socials</h2>
+        <div class="social-links">
+            <a href="https://twitch.tv/bombblingm" target="_blank" class="social-btn twitch">Twitch</a>
+            <a href="https://tiktok.com/bombblingm" target="_blank" class="social-btn tiktok">TikTok</a>
+            <a href="https://youtube.com/bombblingm-tiktok" target="_blank" class="social-btn youtube">YouTube</a>
+            <a href="https://instagram.com/bombblingm" target="_blank" class="social-btn instagram">Instagram</a>
+        </div>
+
+        <!-- COPYRIGHT & RECHTLICHER DISCLAIMER -->
+        <div class="legal-footer">
+            <p><strong>UrhG / Copyright Hinweis:</strong><br>
+            Alle Inhalte dieser Webseite sowie der verlinkten Social-Media-Kanäle (Texte, Grafiken, Videos, Streams) sind urheberrechtlich geschützt. Das Urheberrecht liegt, sofern nicht ausdrücklich anders gekennzeichnet, bei [Ihr Vor- und Nachname]. Eine unerlaubte Vervielfältigung oder Verbreitung ist untersagt.</p>
+            
+            <p style="margin-top: 10px;"><strong>Haftung für Links:</strong><br>
+            Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+
+            <p style="margin-top: 15px;">&copy; <span id="year"></span> Lian ruminowicz. Alle Rechte vorbehalten.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript Logik -->
+    <script>
+        // Setzt das aktuelle Jahr im Copyright automatisch
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Kontaktformular-Logik
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const subject = encodeURIComponent("Kontaktanfrage von Webseite");
+            const body = encodeURIComponent("Absender: " + email + "\n\nNachricht:\n" + message);
+            
+            window.location.href = `mailto:[Ihre E-Mail-Adresse]?subject=${subject}&body=${body}`;
+            
+            alert('Dein E-Mail-Programm wird jetzt geöffnet, um die Nachricht zu senden.');
+        });
+    </script>
+
+</body>
+</html>
